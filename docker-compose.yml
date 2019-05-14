@@ -2,7 +2,7 @@ version: "3.7"
 services:
   samba:
     container_name: samba
-    image: 3ch01c/alpine-samba:armhf
+    image: 3ch01c/samba:armhf
     build:
       context: .
     env_file:
