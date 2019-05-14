@@ -1,0 +1,15 @@
+version: "3.7"
+services:
+  samba:
+    container_name: samba
+    image: 3ch01c/alpine-samba:armhf
+    build:
+      context: .
+    env_file:
+      - me.env
+    ports:
+      - "445:445"
+    volumes:
+      - ./smb.conf:/etc/samba/smb.conf
+      - ./shares/mystuff:/shares/mystuff
+    restart: always
