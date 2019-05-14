@@ -10,11 +10,11 @@ This project is based off [stanback/alpine-samba](https://github.com/Stanback/al
 
 ## Quick(est) Start
 
-If you are using a Raspberry Pi or other arm7+ device, specify the `armhf` image in `docker-compose.yml`.
+If you are using a Raspberry Pi or other arm device, specify the `armhf` image in `docker-compose.yml`.
 ```
     image: 3ch01c/alpine-samba:armhf
 ```
-Otherwise, use the `amd64` image for 64-bit Intel processors.
+Otherwise, use the `amd64` image for 64-bit processors.
 
 Specify a Samba user and password in `me.env`. Note this is currenty only designed for a single set of user credentials.
 ```
