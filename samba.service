@@ -2,11 +2,11 @@
 Description=Samba container
 Requires=docker.service
 After=docker.service
-After=media-mydisk.mount
+After=media-myusbdrive.mount
 
 [Service]
 Restart=always
-ExecStart=/usr/local/bin/docker-compose -f /srv/samba/docker-compose.yml up 
+ExecStart=/usr/local/bin/docker-compose -f /srv/samba/docker-compose.yml up
 ExecStop=/usr/local/bin/docker-compose -f /srv/samba/docker-compose.yml stop
 
 [Install]
